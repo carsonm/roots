@@ -1,0 +1,38 @@
+body {
+  background-image:url('/assets/roots-background.jpg');
+  padding: 0px;
+  margin: 0px;
+}
+
+.content {
+  width: 1015px;
+  height: 800px;
+  background-color: #fff;
+  color: #000;
+  margin: auto;
+  padding: 0px;
+
+  .top-header{
+    background-image:url('/assets/top-header-background.jpg');
+    height: 135px;
+    background-repeat:no-repeat;
+
+    .logo{
+      float: left;
+      padding-left: 20px;
+      padding-top: 15px;
+    }
+
+    .nav{
+      float: right;
+      padding-right: 35px;
+      padding-top: 26px;
+
+      .nav-pieces{
+        padding: 0px;
+        margin: 0px;
+        border: 0;
+      }
+    }
+  }
+}
