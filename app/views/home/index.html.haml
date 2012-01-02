@@ -1,10 +1,6 @@
-%div.content
-  %div.top-header
-    %img.logo{src: "/assets/logo.png"}
-    %div.nav
-      %img.nav-pieces{src: "/assets/navbar-1.png"}>
-      %img.nav-pieces{src: "/assets/navbar-2.png"}>
-      %img.nav-pieces{src: "/assets/navbar-3.png"}>
-      %img.nav-pieces{src: "/assets/navbar-4.png"}>
-      %img.nav-pieces{src: "/assets/navbar-5.png"}>
-      %img.nav-pieces{src: "/assets/navbar-6.png"}>
+-content_for :top_header do
+  %div.top-photos
+    %img{src: "/assets/temp-photos.jpg"}
+  %div.horizontal-bar
+
+= render '/posts/home_index', :posts => @posts

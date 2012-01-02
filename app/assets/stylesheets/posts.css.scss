@@ -1,0 +1,23 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.comment {
+  color:#807f83;
+  font-size:12px;
+  font-style:normal;
+  font-family:FragmentCoreRoman, Tahoma, Verdana, Helvetica, sans-serif;
+  text-transform:none;
+  line-height:1.25em;
+  font-weight:400;
+}
+
+.comments {
+  display: none;
+}
+
+hr {
+  color: #fff;
+  background-color: #fff;
+  border: 1px dotted #807f83;
+  border-style: none none dotted;
+}
