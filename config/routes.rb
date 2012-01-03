@@ -1,5 +1,7 @@
 Roots::Application.routes.draw do
 
+  resources :contacts
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -14,6 +16,7 @@ Roots::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   resources :home
   resources :about
+  resources :blog
   resources :posts do
     resources :comments
   end

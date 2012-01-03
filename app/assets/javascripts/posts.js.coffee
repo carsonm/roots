@@ -6,7 +6,6 @@ jQuery ->
 
   `$(".show-hide-comments").toggle(function(){
     var this_id = $(this).attr("id").replace("show-hide-comments-", "");
-    alert(this_id);
     $('#comments-' + this_id).show();
     this.src = "/assets/comment_down.png";
   }, function() {

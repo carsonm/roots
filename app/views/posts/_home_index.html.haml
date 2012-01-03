@@ -1,17 +1,18 @@
 -posts.each do |post|
-  %h2=post.title
-  %p posted #{post.created_at.strftime('%B%e, %Y')} by #{post.name}
-  %p=raw post.content
-  %p
-    %b posted in:
-    =join_tags(post)
+  %div.post
+    %h2=post.title
+    %p posted #{post.created_at.strftime('%B%e, %Y')} by #{post.name}
+    %p=raw post.content
+    %p
+      %b posted in:
+      =join_tags(post)
 
-  %div.comment
-    #{post.comments.count} COMMENTS &nbsp;&nbsp;&nbsp;&nbsp;
-    %img.show-hide-comments{src: "/assets/comment_up.png", valign: "bottom", id: "show-hide-comments-#{post.id.to_s}"}
-    %div{style: "float: right;"}
-      %a.leave-a-comment{id: "leave-a-comment-#{post.id.to_s}"} leave a comment
-    %div.comments{id: "comments-#{post.id.to_s}"}
-      =render post.comments
-    %div.comment-form{id: "comment-form-#{post.id.to_s}"}
-      = render "comments/form", :post => post
+    %div.comment
+      #{pluralize(post.comments.count.to_i, 'COMMENT').upcase} &nbsp;&nbsp;&nbsp;&nbsp;
+      %img.show-hide-comments{src: "/assets/comment_up.png", valign: "bottom", id: "show-hide-comments-#{post.id.to_s}"}
+      %div{style: "float: right;"}
+        %a.leave-a-comment{id: "leave-a-comment-#{post.id.to_s}"} leave a comment
+      %div.comments{id: "comments-#{post.id.to_s}"}
+        =render post.comments
+      %div.comment-form{id: "comment-form-#{post.id.to_s}"}
+        = render "comments/form", :post => post

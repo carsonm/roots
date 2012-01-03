@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 	def index
-    @posts = Post.all
+    @posts = Post.find(:all, :order => "created_at DESC")
 		render
 	end
 end

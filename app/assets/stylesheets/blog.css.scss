@@ -1,0 +1,13 @@
+// Place all the styles related to the Blog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.about-image {
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+
+  -moz-box-shadow:    0px 0px 5px 1px #888;
+  -webkit-box-shadow: 0px 0px 5px 1px #888;
+  box-shadow:         0px 0px 5px 1px #888;
+}
