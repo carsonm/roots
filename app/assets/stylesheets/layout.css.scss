@@ -65,6 +65,17 @@ a {
   display: table;
 }
 
+.field{
+  color:#807f83;
+  font-size:15px;
+  font-style:normal;
+  font-family:FragmentCoreRoman, Tahoma, Verdana, Helvetica, sans-serif;
+  text-transform:none;
+  line-height:1.25em;
+  font-weight:400;
+  padding-top: 10px;
+}
+
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -122,7 +133,7 @@ a {
 
       a {
         &:hover {
-          background-color: transparent; }
+          background-color: #7a684e; }
       }
 
       .nav-pieces{

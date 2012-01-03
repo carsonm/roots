@@ -6,10 +6,12 @@
     %b posted in:
     =join_tags(post)
 
-  %p.comment
+  %div.comment
     #{post.comments.count} COMMENTS &nbsp;&nbsp;&nbsp;&nbsp;
-    %img{src: "/assets/comment_up.png", valign: "bottom"}
-  =render post.comments
-
-  %h2 Add a comment:
-  = render "comments/form", :post => post
+    %img.show-hide-comments{src: "/assets/comment_up.png", valign: "bottom", id: "show-hide-comments-#{post.id.to_s}"}
+    %div{style: "float: right;"}
+      %a.leave-a-comment{id: "leave-a-comment-#{post.id.to_s}"} leave a comment
+    %div.comments{id: "comments-#{post.id.to_s}"}
+      =render post.comments
+    %div.comment-form{id: "comment-form-#{post.id.to_s}"}
+      = render "comments/form", :post => post

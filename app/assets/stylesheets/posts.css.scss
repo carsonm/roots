@@ -13,11 +13,24 @@
 
 .comments {
   display: none;
+
+  p {
+    border: 1px dotted #807f83;
+    border-style: none none dotted;
+    padding: 3px 0px 3px 0px;
+  }
 }
 
-hr {
-  color: #fff;
-  background-color: #fff;
-  border: 1px dotted #807f83;
-  border-style: none none dotted;
+.comment-form {
+  display: none;
+}
+
+.leave-a-comment{
+  cursor: pointer;
+}
+
+#comment_body {
+  margin-top: 5px;
+  width: 500px;
+  height: 150px;
 }
